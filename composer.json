@@ -1,0 +1,30 @@
+{
+    "name": "mima/smart-grabber",
+    "description": "Smart grabber for parsing HTML documents and getting data by custom rules.",
+    "require": {
+        "php": ">=5.5",
+        "ext-fileinfo": "*",
+        "mima/dom-navigator": "^1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitriy Konev",
+            "email": "dnkonev@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SmartGrabber\\": "src/SmartGrabber"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:MimaTomis/DOMNavigator.git"
+        }
+    ]
+}
