@@ -107,6 +107,9 @@ class BaseElementFactory implements ElementFactoryInterface
 	 */
 	protected function normalizeFilePath($url, $filePath)
 	{
+		if (preg_match('#^\/\/#', $filePath))
+			$filePath = 'http:'.$filePath;
+
 		if (!filter_var($filePath, FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED|FILTER_FLAG_HOST_REQUIRED)) {
 			if (filter_var($url, FILTER_VALIDATE_URL)) {
 				$filePath = rtrim($url, '/') . '/' . ltrim($filePath, '/');

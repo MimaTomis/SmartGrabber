@@ -62,6 +62,7 @@ class BaseElementFactoryTest extends \PHPUnit_Framework_TestCase
 			[FIXTURES_DIR, 'test-file', new \DOMElement('div', 'form.html'), FIXTURES_DIR.'/form.html', 'form.html', 'html', 'text/html'],
 			['http://yost.ru', 'test-url', new \DOMElement('div', 'http://www.orimi.com/pdf-test.pdf'), 'http://www.orimi.com/pdf-test.pdf', 'pdf-test.pdf', 'pdf', 'application/pdf'],
 			['http://www.orimi.com', 'test-url', new \DOMAttr('div', '/pdf-test.pdf'), 'http://www.orimi.com/pdf-test.pdf', 'pdf-test.pdf', 'pdf', 'application/pdf'],
+			['http://www.orimi.com', 'test-url', new \DOMAttr('div', '//www.orimi.com/pdf-test.pdf'), 'http://www.orimi.com/pdf-test.pdf', 'pdf-test.pdf', 'pdf', 'application/pdf'],
 			[FIXTURES_DIR.'/temp', 'test-file', new \DOMAttr('div', 'simple.html'), FIXTURES_DIR.'/simple.html', 'simple.html', 'html', 'text/html']
 		];
 	}
