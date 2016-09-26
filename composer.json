@@ -20,11 +20,5 @@
         "psr-4": {
             "SmartGrabber\\": "src/SmartGrabber"
         }
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git@github.com:MimaTomis/DOMNavigator.git"
-        }
-    ]
+    }
 }
